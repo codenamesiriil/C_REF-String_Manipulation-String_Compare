@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include ".\inc\cns_str_cmp.h"
 
 char    *cns_strstr(const char *haystack, const char *needle)
 {
@@ -22,15 +21,4 @@ char    *cns_strstr(const char *haystack, const char *needle)
 		i++;
 	}
 	return (NULL);
-}
-
-int	main(void)
-{
-	char	str1[] = "";
-	char	str2[] = "";
-	char	*ptr;
-
-	ptr = cns_strstr(str1, str2);
-	printf("%s\n", ptr);
-	return (0);
 }

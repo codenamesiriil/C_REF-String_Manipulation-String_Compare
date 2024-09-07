@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include ".\inc\cns_str_cmp.h"
 
 char	*cns_strrchr(const char *s, int c)
 {
@@ -15,16 +14,4 @@ char	*cns_strrchr(const char *s, int c)
 	} while (s-- != ptr);
 
 	return (NULL);
-}
-
-int	main(void)
-{
-	char	str1[] = "This is a string";
-	char	*ptr = cns_strrchr(str1, 's');
-
-	printf("%s\n", ptr);
-	
-	(*ptr == '\0') ? printf("Yes\n") : printf("No\n");
-
-	return (0);
 }
